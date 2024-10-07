@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <header>
+      <button id="menu-btn">
+        <svg pointer-events="none" class="icon1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path pointer-events="none" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        <span class="span1">메뉴</span>
+      </button>
+  </header>
+
+  <!-- nav -->
+  <nav id="side-bar" class="hidden">
+    <div>
+      <img class="title" src="https://i.namu.wiki/i/af4q3ToRJivLlmLJ8Vxqrxye2i0BD2LvqVA34h3YNSB-UIQatsLPryULmEc3XH9Ao0ymqPkL37RpCt_fXTp7BMTQyb-wVWWSsmoLecdALcx8nB73scxoDCbSAN-koe-4WlaeCYhMx5uSLq68BNgDLA.webp" alt="">
+    </div>
+    
+    <ol>
+      <li id="kimdokja" class="list" onmouseenter="mouseon(0)" onmouseleave="mouseoff(0)">
+        <a href="kimdokja.html" class="name">김독자(결말)</a>
+      </li>
+      <li id="yoosangah" class="list" onmouseenter="mouseon(1)" onmouseleave="mouseoff(1)">
+        <a href="yoosangah.html" class="name">유상아(타인)</a>
+      </li>
+      <li id="leegilyoung" class="list" onmouseenter="mouseon(2)" onmouseleave="mouseoff(2)">
+        <a href="leegilyoung.html" class="name">이길영(곤충)</a>
+      </li>
+      <li id="hansooyoung" class="list" onmouseenter="mouseon(3)" onmouseleave="mouseoff(3)">
+        <a href="hansooyoung.html" class="name">한수영(거짓)</a>
+      </li>
+      <li id="yoojunghyuk" class="list" onmouseenter="mouseon(4)" onmouseleave="mouseoff(4)">
+        <a href="yoojunghyuk.html" class="name">유중혁(고독)</a>
+      </li>
+      <li id="leejihye" class="list" onmouseenter="mouseon(5)" onmouseleave="mouseoff(5)">
+        <a href="leejihye.html" class="name">이지혜(상처)</a>
+      </li>
+      <li id="jungheewon" class="list" onmouseenter="mouseon(6)" onmouseleave="mouseoff(6)">
+        <a href="jungheewon.html" class="name">정희원(멸악)</a>
+      </li>
+      <li id="leehyensung" class="list" onmouseenter="mouseon(7)" onmouseleave="mouseoff(7)">
+        <a href="leehyensung.html" class="name">이현성(정의)</a>
+      </li>
+      <li id="shinyuseung" class="list" onmouseenter="mouseon(8)" onmouseleave="mouseoff(8)">
+        <a href="shinyuseung.html" class="name">신유승(틈새)</a>
+      </li>
+    </ol>
+  </nav>
+  <div id="overlay" class="hidden"></div>
+  
+
+  <!-- image -->
+  <div id="dokja" class="info hidden">
+    <img class="image" src="https://i.namu.wiki/i/W4dqd_95E49DEy7o-4Xk12gUSHjrCLyEiHVXiSXStKYRN4hJ7XdBa7Tv-xaSHppzqeRaD-ncRhzHmJtCqkkZZ9QXdODGgPYxBEaY2W7Buei48udAND8NUBcf7Bz2ZERfG9C4bbLaLGgBsDd5-HcDew.webp" alt="김독자">
+  </div>
+
+  <div id="sangah" class="info hidden">
+    <img class="image" src="https://i.namu.wiki/i/wcnEuV97f0WDNBQhEskgJEGlqW2qk6cEN2W9ubrt6P8MNgc_EUiszKcfAod_416TQKytZJH9KS1U0vpipcSYSfbj89ESxiLEFhsc9G32TQDNKtx2shUB-jKkQRz9T2UJ_uIR9cxacngpfGDf0tNL9w.webp" alt="유상아">
+  </div>
+  
+  <div id="gilyoung" class="info hidden">
+    <img class="image" src="https://i.namu.wiki/i/gBqcQFfL5YcHxc7vxicmDCvO0X5q5pCTkHjAl_EJeerqTcWu720210aJapbyATbWNeMndJvHoz1iPScW3MD617rRTlZIUu-a73fUkqw8YOBPAIiEU-ZZlU4qlZ5cqeonhEdCThLVBus6Y2z2wdTURQ.webp" alt="이길영">
+
+  </div>
+  
+  <div id="sooyoung" class="info hidden">
+    <img class="image" src="https://i.namu.wiki/i/alGF0V9QdVbIEMhQftDb2PRKV8hN5fug3C-sYhoOcpWmQhwP2ZoM34nuP2EWMJBwlnbEtf7ElERVf5prA1RCgg8y5bUfiFySXvyXCmu8S1YHVfTdKPJNA1TL3FvTgtoWC4eOt5lviNPvc1x5dC2LZg.webp" alt="한수영">
+
+  </div>
+  
+  <div id="junghyuk" class="info hidden">
+    <img class="image" src="https://i.namu.wiki/i/gv09b5Iekrj-GbflegJaJewCctdcws_56KoxbB5uD8hM_mk8m_VN1dBOLcy9qIlaElkHWIeDeW-4JTjdqZk42tZUe1y25cbqaPJU7Oot-6rRziLJDXDwHinAlbOjuu3OtcClgiaaSM3BxFCLHe74HA.webp" alt="유중혁">
+
+  </div>
+  
+  <div id="jihye" class="info hidden">
+    <img class="image" src="https://i.namu.wiki/i/EBnBQ9hmbL7a6QM8lvjLbp-FXItzXqFupfMIPD5FoVQDh5jCQqReqaTgYvTzfBFxbumIeeWY0VmxNRf7_lJpDlsjjmJuMjPm92HFmHnc9Rv6blhmn6K1SaXg1Jek0JZvHOk6CWEFrWZYinJajj-vdQ.webp" alt="이지혜">
+
+  </div>
+  
+  <div id="heewon" class="info hidden">
+    <img class="image" src="https://i.namu.wiki/i/GAnLqIYoPuDC2Q-khGJLq51AmnZ01hKCwcxlw3D3chB3zgxJ2daFMBzPbaeEhwekojhVkHoEkNwrTg5LhDyRVtd8hMooy9tton34H_q_6JxYv9Cg1FmsVMhPxDSjtqsdLrVzaadfD2xS9qtdXWM4Iw.webp" alt="정희원">
+
+  </div>
+  
+  <div id="hyensung" class="info hidden">
+    <img class="image" src="https://i.namu.wiki/i/Ety5cxOiXvZyn80aD2w63J8YJiVRnio_HUt27jFkcqpTAxR18OjMyckgq6IgjA4-ijr253-wjEJTfG9VaixtpgIr9IFHCr_Eekypt1WYvu7yliw1Fiw31OkNlAU6440pz2aMc_znqcqtFbE9z8IxDg.webp" alt="이현성">
+
+  </div>
+  
+  <div id="yuseung" class="info hidden">
+    <img class="image" src="https://i.namu.wiki/i/yBQm2aeRepPRQDczBUaBXjm4RhBXr4kmzinNwTdpsARaVf76LFtUsmHjnHb57Sde4i6QpS0yWsbTH8gV6zZPnRU1tARuU5Beil28Z6yuNzuA9mxGh0avusbe0pt779Xy1nO7SM9LQv7iwwTqKTjv7w.webp" alt="신유승">
+
+  </div>
+  
+  <!-- main -->
+  <main>
+    <div class="textbox">
+      <h1 style="color: rgb(53, 0, 97);">
+        「그 이야기는, 지하철에서 시작되었다.」
+        <br>
+      </h1>
+      <h1 style="color: rgb(61, 81, 20);">
+        「그곳에, 정의롭고 싶었던 군인이 있었다.」
+        <br>
+      </h1>
+      <h1 style="color: black;">
+        「세상에서 가장 강하고 고독한 사내가 있었고,」
+        <br>
+      </h1>
+      <h1 style="color: rgb(192, 147, 118);">
+        「타인을 위해 자신을 숨겨왔던 여인도, 그곳에 있었다.」
+        <br>
+      </h1>
+      <h1 style="color: rgb(0, 127, 255);">
+        「인연을 잃고 상처받은 검귀를 만났고.」
+        <br>
+      </h1>
+      <h1 style="color: rgb(236, 230, 204);">
+        「과거와 미래의 틈새에서 태어난 아이가 울었다.」
+        <br>
+      </h1>
+      <h1 style="color: rgb(129, 215, 223);">
+        「세상에서 가장 강한 소인을 스승으로 두었고.」
+        <br>
+      </h1>
+      <h1 style="color: rgb(184, 115, 51);">
+        「세상에서 가장 강한 거인의 세계를 구했다.」
+        <br>
+      </h1>
+      <h1 style="color: white;">
+        「그리고, 이 모든 세계의 결말을 아는 한 사내가 있었다.」
+        <br>        
+      </h1>
+      <h1 style="color: white;">
+        「이것은 독자(讀者)의 설화.」
+        <br>        
+      </h1>
+      <h1 style="color: white;">
+        「동시에, 독자(獨子)의 설화.」
+        <br>
+      </h1>
+      <h1 style="color: rgb(204, 17, 0);">
+        「오랜 웅크림에서 깨어나, 멸악의 칼을 쥔 여인이 웃었다.」
+        <br>        
+      </h1>
+      <h1 style="color: rgb(34, 139, 34);">
+        「어미를 잃고 곤충을 손에 쥔 소년이 울었고」
+        <br>        
+      </h1>
+      <h1 style="color: rgb(58, 37, 6);">
+        「돌아오지 않을 가족을 위해 성을 구축한 사내가 포효했다.」
+        <br>        
+      </h1>
+      <h1 style="color: rgb(72, 61, 139);">
+        「거짓으로 진실을 쌓아올린 여인이, 기꺼이 그의 그림자가 되었다.」
+      </h1>
+    </div>
+  </main>
+
+  
+  
+  <!-- script -->
+  <script src="./js/index.js"></script>
+</body>
+  
+</html>
