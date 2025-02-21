@@ -1,3 +1,5 @@
+package exam01;
+
 public class ThreadEx3 {
     public static void main(String[] args) {
         Thread th = new Thread(() -> {

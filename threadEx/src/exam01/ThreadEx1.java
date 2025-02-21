@@ -1,3 +1,5 @@
+package exam01;
+
 public class ThreadEx1 {
     public static void main(String[] args) {
         // 메인 쓰레드에서 실행

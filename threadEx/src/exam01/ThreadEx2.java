@@ -1,3 +1,5 @@
+package exam01;
+
 public class ThreadEx2 {
     public static void main(String[] args) {
         ThreadEx2_1 th = new ThreadEx2_1();
